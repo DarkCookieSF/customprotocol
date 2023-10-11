@@ -1,0 +1,16 @@
+Here are steps on how to create a custom protocol.
+
+1. Click Win + R to open run.
+2. Type into the bar "regedit.exe".
+3. Allow Registry Editor to make changes to your device.
+4. Right click HKEY_CLASSES_ROOT.
+5. Click New > Key.
+6. Name your key to what you want the protocol to be.
+7. Add a new string value and call it "URL Protocol".
+8. Double click the new string and type in "URL:(name of key) Protocol".
+9. Right click the key and add a new key called "shell".
+10. Add another key inside shell called "open".
+11. Add another key inside oepn called "command".
+12. Now edit the (Default) string.
+13. Set the value to "(application or file location) "%1" "
+14. Now you're done! Go to the address bar and type in "(protocol name)://" and it should pop up saying something like open this application. If it doesn't work you might need to remove the "%1" or make sure the URL Protocol and key are the same name.
