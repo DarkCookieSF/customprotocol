@@ -12,5 +12,7 @@ Here are steps on how to create a custom protocol.
 10. Add another key inside shell called "open".
 11. Add another key inside oepn called "command".
 12. Now edit the (Default) string.
-13. Set the value to "(application or file location) "%1" "
+13. Set the value to "(application or file location)"
 14. Now you're done! Go to the address bar and type in "(protocol name)://" and it should pop up saying something like open this application. If it doesn't work you might need to remove the "%1" or make sure the URL Protocol and key are the same name.
+
+If you want to tell the application what was typed you add "%1" to step 13 after the other string.
